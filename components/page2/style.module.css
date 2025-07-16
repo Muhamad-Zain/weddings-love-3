@@ -1,5 +1,5 @@
 .bg{
-    @apply relative w-full h-[90vh] sm:h-screen ;
+    @apply relative w-full h-[80vh] sm:h-screen ;
     background-position: center;
     background-size: cover;
     object-fit: cover;
