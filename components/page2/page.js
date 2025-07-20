@@ -23,7 +23,7 @@ export default function Page2({data, id}) {
         if (completed) {
             // Render a completed state
             return (
-              <div style={{ fontSize: '2rem', textAlign: 'center' }} className=" Time  flex w-screen px-10 sm:w-full sm:px-0  m-auto font-serif text-white p-2 justify-between">
+              <div style={{ fontSize: '2rem', textAlign: 'center' }} className=" Time  flex w-screen px-10 sm:w-full sm:px-10  m-auto font-serif text-white p-2 justify-between">
                 <div className="rounded-full border  border-white  bg-opacity-90 w-[4rem] h-[4rem]  flex justify-center items-center">
                   <div className="leading-6 text-4xl sm:text-5xl  font-bold">
                     <p>00</p>
