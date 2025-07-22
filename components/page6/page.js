@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { fetchGalery } from "../data/firebase";
 import { FaAngleDoubleRight, FaAngleDoubleLeft } from "react-icons/fa";
 import { CgCloseO } from "react-icons/cg";
-import { AnimatedSection, AnimateSee } from "../animation";
+import { AnimatedSection, AnimateGalery, AnimateSee } from "../animation";
 
 
 
@@ -67,9 +67,9 @@ export default function Page9({data, id}) {
         return (
           <div key={index} className="flex gap-4 justify-center">
             {/* Gambar kiri */}
-            <AnimateSee>
+            <AnimateGalery>
               <div
-                className="w-[10rem] h-40 overflow-hidden rounded-lg shadow-sm"
+                className="w-full h-40 overflow-hidden rounded-lg shadow-sm"
                 onClick={() => handleImg(index)}
               >
                 <img
@@ -78,13 +78,13 @@ export default function Page9({data, id}) {
                   className="w-full h-full object-cover"
                 />
               </div>
-            </AnimateSee>
+            </AnimateGalery>
 
             {/* Gambar kanan */}
             {image[index + 1] && (
-              <AnimateSee>
+              <AnimateGalery>
                 <div
-                  className="w-[10rem] h-40 overflow-hidden rounded-lg shadow-sm"
+                  className="w-full h-40 overflow-hidden rounded-lg shadow-sm"
                   onClick={() => handleImg(index + 1)}
                 >
                   <img
@@ -93,7 +93,7 @@ export default function Page9({data, id}) {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              </AnimateSee>
+              </AnimateGalery>
             )}
           </div>
         );
